@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,4 +128,63 @@ document.getElementById("form").addEventListener("submit", async (e) => {
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Website</title>
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+}
+
+.box {
+    background: white;
+    color: black;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome 🚀</h1>
+
+<div class="box">
+<h2>Student Profile</h2>
+<p>Name: Aravindh</p>
+<p>Course: BCA</p>
+</div>
+
+<div class="box">
+<h2>Event Registration</h2>
+
+<form onsubmit="submitForm(event)">
+<input id="name" placeholder="Name" required>
+<input id="email" placeholder="Email" required>
+<button>Submit</button>
+</form>
+
+</div>
+
+<script>
+function submitForm(e){
+    e.preventDefault();
+    alert("Registration Successful");
+}
+</script>
+
+</body>
+>>>>>>> 0b521c1200adfbe6b9dcc06ca7b9ac08c51a86cc
 </html>
