@@ -1,0 +1,19 @@
+const express = require("express");
+const app = express();
+
+app.use(express.json());
+
+let users = [];
+
+app.post("/api/register", (req, res) => {
+    users.push(req.body);
+    res.json({ message: "Registration Successful" });
+});
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+});
+
+app.listen(3000, () => {
+    console.log("Server running on http://localhost:3000");
+});
